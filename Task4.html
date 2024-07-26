@@ -1,0 +1,58 @@
+<!-- Task4 -->
+ 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task4</title>
+</head>
+<style>
+    .container{
+        display: grid;
+        grid-template-rows: repeat(2,1fr);
+        grid-template-columns:repeat(6, 1fr);
+        gap: 5px;
+    }
+
+    .item1{
+        grid-row-start: 2;
+    }
+
+    .item3{
+        grid-row-start:1 ;
+    }
+
+    .item2{
+        grid-row-start: 2;
+    }
+
+    .item{
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid rgba(184, 175, 175, 0.909);
+        border-radius:3px;
+        height: 50px;
+        background-color: lightgray; 
+    }
+
+    .itemColor{
+        color: azure;
+        background-color: black;
+    }
+</style>
+
+<body>
+    <div class="container">
+        <div class="item item1 itemColor">1</div>
+        <div class="item item2">2</div>
+        <div class="item item3 itemColor">3</div>
+        <div class="item item4">4</div>
+        <div class="item item5 itemColor">5</div>
+        <div class="item item6">6</div>
+        <div class="item item7 itemColor">7</div>
+        <div class="item item8">8</div>
+    </div>
+</body>
+</html>

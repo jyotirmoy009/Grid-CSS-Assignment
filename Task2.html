@@ -1,0 +1,56 @@
+<!-- Task2. Write code to arrange containers with texts A, B, C, and D as shown in the given image. -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arranging Codes</title>
+</head>
+<style>
+    #container{
+        display: grid;
+        grid-template-rows: 100px 100px;
+        grid-template-columns:100px 100px 100px 100px;
+        height: 100vh;
+        justify-content: center;
+        align-content: center;
+        gap: 0.5rem;
+    }
+
+    .item-1{
+       grid-column: 1/3;
+    }
+
+    .item-2{
+       grid-row: 1/3;
+       grid-column: 3/4;
+    }
+    
+    .item-3{
+       grid-column: 1/2;
+    }
+
+    .item-4{
+       grid-column: 2/3;
+    }
+
+    .item{
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        background-color: rgb(245, 210, 216);
+        border-radius: 0.5rem;
+        box-shadow: 0px 8px 9px;  
+    }
+</style>
+
+<body>
+    <div id="container">
+        <div class="item item-1">A</div>
+        <div class="item item-2">B</div>
+        <div class="item item-3">C</div>
+        <div class="item item-4">D</div>
+    </div>
+</body>
+</html>
